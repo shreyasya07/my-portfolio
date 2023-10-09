@@ -25,8 +25,8 @@ const Projects = () => {
       id:3,
       src:Portfolio,
       demo:true, 
-      code:'',
-      view:'',
+      code:'https://github.com/shreyasya07/my-portfolio',
+      view:'https://master--glowing-croissant-04352e.netlify.app/',
     },
     {
       id:4,
