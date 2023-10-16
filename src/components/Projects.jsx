@@ -3,35 +3,48 @@ import Netflix from '../assets/Project.png';
 import OnlineBhojan from '../assets/onlinebhojan.png'
 import Portfolio from '../assets/Portfolio.png'
 import ToDo from '../assets/todo.png'
+import Confluence from '../assets/Confluence.png'
 
 
 const Projects = () => {
   const projects=[
     {
       id:1,
+      src:Confluence,
+      demo:true,
+      c:false,
+      code:'',
+      view:'https://confluencenitkkr.com/',
+    },
+    {
+      id:2,
       src:Netflix,
       demo:false,
+      c:true,
       code:'https://github.com/shreyasya07/Netflix-clone',
       view:'',
     },
     {
-      id:2,
+      id:3,
       src:ToDo,
       demo:false,
+      c:true,
       code:'https://github.com/shreyasya07/To-Do-App',
       view:'',
     },
     {
-      id:3,
+      id:4,
       src:Portfolio,
       demo:true, 
+      c:true,
       code:'https://github.com/shreyasya07/my-portfolio',
       view:'https://master--glowing-croissant-04352e.netlify.app/',
     },
     {
-      id:4,
+      id:5,
       src:OnlineBhojan,
       demo:true,
+      c:true,
       code:'https://github.com/shreyasya07/OnlineBhojan',
       view:'https://shreyasya07.github.io/OnlineBhojan/',
     },
@@ -49,7 +62,7 @@ const Projects = () => {
 
         <div className='grid sm:grid-cols-2 md:grid-cols-3 
         gap-8 px-12 sm:px-0'>
-          {projects.map(({id,src,demo,view,code})=>(
+          {projects.map(({id,src,demo,c,view,code})=>(
             <div key={id} className='shadow-md shadow-gray-600 rounded-lg
             '>
             <img src={src} alt="" className='rounded-md duration-200 hover:scale-105'/>
@@ -57,8 +70,10 @@ const Projects = () => {
                 {demo && 
                   <button className='w-1/2 px-6 py-3 m-4 duration-200 
                   hover:scale-105'><a href={view} target='_blank' rel='noreferrer'>Demo</a></button>}
+                {c &&
                   <button className=' w-1/2 px-6 py-3 m-4 duration-200 
                   hover:scale-105'><a href={code} target='_blank' rel='noreferrer'>Code</a></button>
+                }
               </div>
             </div>
           ))}
