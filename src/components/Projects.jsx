@@ -26,20 +26,21 @@ const Projects = () => {
     },
     {
       id:3,
-      src:ToDo,
-      demo:false,
-      c:true,
-      code:'https://github.com/shreyasya07/To-Do-App',
-      view:'',
-    },
-    {
-      id:4,
       src:Portfolio,
       demo:true, 
       c:true,
       code:'https://github.com/shreyasya07/my-portfolio',
       view:'https://master--glowing-croissant-04352e.netlify.app/',
     },
+    {
+      id:4,
+      src:ToDo,
+      demo:false,
+      c:true,
+      code:'https://github.com/shreyasya07/To-Do-App',
+      view:'',
+    },
+    
     {
       id:5,
       src:OnlineBhojan,
